@@ -1,14 +1,126 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+.nav {
+  border-bottom: 1px solid #eaeaeb;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+.menu {
+  margin: 0 30px 0 0;
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+span {
+  color: #54d17a;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
     text-align: center;
-    background-color: orange;
+    width: 100%;
+    display: none;
   }
-  h1{
-    color: red;
-    font-size: 50px;
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
   }
-  #myId {text-align: left;}
-  img {
-    border-width: 6px;
-    border-style: solid;
-    border-color: blue;
+  #toggle:checked + .menu {
+    display: block;
   }
+}
+
+.nav .SniperProductions {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  color: whitesmoke;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  background-image: url("https://static1.squarespace.com/static/52dc634ee4b050564e0cd851/5a9e2dde24a6940b3d49965e/5af9e135758d46bd43b8c05f/1554773929004/_DSF8506-Pano-copy.jpg?format=1000w");
+  background-attachment: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about {
+  display: grid;
+}
+
+.box1 {
+  background-opacity: 0.5;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left: 50px;
+  margin-right: 51%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+.Box1Text {
+  font-size: 12px;
+  margin: 50px;
+  font-family: arial;
+}
+
+.box1_image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Looking_south_along_Trinity_Beach%2C_in_the_distance_is_the_marina_at_Yorkeys_Knob%2C_2018.jpg");
+  position: absolute;
+  top: 245px;
+  margin-left: 47%;
+  margin-right: 10%;
+  border-radius: 5px;
+  background-position: center;
+  background-size: 100%;
+  width: 46.5%;
+  height: 39%;
+}
