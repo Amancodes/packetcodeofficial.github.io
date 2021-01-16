@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    background-color: orange;
+  }
+  h1{
+    color: red;
+    font-size: 50px;
+  }
+  #myId {text-align: left;}
+  img {
+    border-width: 6px;
+    border-style: solid;
+    border-color: blue;
+  }
